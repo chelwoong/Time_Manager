@@ -23,10 +23,10 @@ chrome.alarms.onAlarm.addListener(function() {
   chrome.notifications.create({
       type:     'basic',
       iconUrl:  'bomb.png',
-      title:    'Are you here?',
-      message:  'Make some money',
+      title:    'Are you there?',
+      message:  '',
       buttons: [
-        {title: 'ON'}
+        {title: 'OK'}
       ],
       priority: 3});
 });
