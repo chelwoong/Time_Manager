@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/popup.css" />
+
+    <!-- js package -->
+    <script src='lib/moment.min.js'></script>
+  </head>
+  <body>
+    <img src='./clock.png' id='ClockImage'>
+    <!-- An Alarm delay of less than the minimum 1 minute will fire
+      in approximately 1 minute incriments if released -->
+      <button type="button" id='60min' value='60' class="btn btn-outline-danger">60 Minutes</button>
+      <button type="button" id='30min' value='30' class="btn btn-outline-warning">30 Minutes</button>
+      <button type="button" id='sampleSecond' value='0.1' class="btn btn-outline-success">Sample Timer</button>
+    <button type="button" id='cancelAlarm' class="btn btn-outline-dark">Cancel Alarm</button>
+    <a href="/calendar.html">Calenar View</a>
+    <!-- link to non-persistent background script -->
+    <!-- <script src="popup.js"></script> -->
+    <script src='popup.js'></script>
+    <script src='background.js'></script>
+  </body>
+</html>
