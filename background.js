@@ -20,7 +20,7 @@ console.log('Today', Today);
 chrome.alarms.onAlarm.addListener(function() {
   chrome.browserAction.setBadgeText({text: ''});
   
-  chrome.notifications.create({
+  chrome.notifications.create("notification", {
       type:     'basic',
       iconUrl:  'bomb.png',
       title:    'Are you there?',
@@ -46,4 +46,5 @@ chrome.notifications.onButtonClicked.addListener(function() {
     })
     chrome.alarms.create({delayInMinutes: item.minutes});
   });
+  chrome.notifications.clear("notification")
 });
