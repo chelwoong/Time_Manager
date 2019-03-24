@@ -11,3 +11,5 @@ This project was created using [Full Calendar](https://fullcalendar.io/) and [ch
 - Monthly statistics
 - Check by time in daily mode
 - User set up time
+
+[Chrome Webstore 바로가기](https://chrome.google.com/webstore/detail/time-manager/fkeblohjdefejdpegoclmhcllgkdlflh?hl=ko)
